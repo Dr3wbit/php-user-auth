@@ -15,8 +15,9 @@
 <body>
     <div class="container">
         <h1 class="center">PHP User Authentication</h1>
+        <h2 class="center red-text darken-2"><?= isset($_GET['auth_error']) ? 'Invalid username and/or password':''?></h2>
         <div class="row">
-            <form action="./auth.php" method="POST" class="col s12">
+            <form action="./db_auth.php" method="POST" class="col s12">
                 <div class="row">
                     <div class="input-field col s6">
                         <input id="username" type="text" name="username">
